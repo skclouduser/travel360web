@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../fonts/Segoe/Segoe\ UI.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../fonts/Segoe/Segoe UI Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/Segoe/Segoe UI Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../fonts/Segoe/Segoe UI Bold Italic.woff') format('woff');
+    }
+
+    body {
+        font-family: 'Segoe UI Regular';
+    }
+    h3, h5, h4 {
+        color: #249CA7;
+        font-family: 'Segoe UI Bold';
+    }
+
+    #about-content .tr-about__container--content {
+        color: #707070;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: 'Segoe UI';
+    }
+    .tr-about__container--content{
+        width: 90%;
+        margin:0 auto;
+    }
+    #about-content{
+        padding-top: 40px;
+    }
+    #about-content span {
+        color: #FBAD18;
+    }
+    .tr-menu > li > a{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070 !important;
+    }
+    .tr-menu{
+        width: 70vw;
+    }
+.tr-header{
+    box-shadow: 1px 2px 4px 1px #ccc;
+}
+.tr-banner-container{
+    width: 100%;
+}
+.tr-banner-container img{
+    width: 100%;
+}
+.tr-partner-container{
+    width: 100px;
+    margin-top: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.3333%;
+}
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tr-section-header{
+    margin-bottom: 40px;
+}
+.tr-feature-image__container{
+    margin-bottom: 40px;
+    min-height: 90px;
+}
+.tr-already-partner__link{
+    background: #FBAD18;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 10px;
+    border:4px solid;
+    border-color: #fff;
+    text-decoration: none !important;
+}
+.tr-already-partner__link:hover{
+    /* background: #FBAD18; */
+    color:  #FBAD18;  
+    background: #fff;
+    border-color: #FBAD18;
+}
