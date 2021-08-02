@@ -29,26 +29,38 @@
     src: local('Segoe UI Bold Italic'), url('../fonts/Segoe/Segoe UI Bold Italic.woff') format('woff');
     }
 
+    @font-face {
+        font-family: 'Segoe UI Semibold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Segoe UI Semi Bold'), url('../fonts/Segoe/seguisb.ttf') format('ttf');
+    }
+
     body {
         font-family: 'Segoe UI Regular';
+        color: #707070 !important;
     }
     h3, h5, h4 {
         color: #249CA7;
         font-family: 'Segoe UI Bold';
+        min-height: 75px;
     }
 
     #about-content .tr-about__container--content {
         color: #707070;
         font-size: 16px;
         line-height: 30px;
-        font-family: 'Segoe UI';
+        font-family: 'Segoe UI Semibold';
     }
     .tr-about__container--content{
         width: 90%;
         margin:0 auto;
     }
-    #about-content{
+    /* #about-content{
         padding-top: 40px;
+    } */
+    .tr-main-container .active {
+        color: #FF0000 !important;
     }
     #about-content span {
         color: #FBAD18;
@@ -86,6 +98,7 @@ section {
 }
 .tr-section-header{
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 .tr-feature-image__container{
     margin-bottom: 40px;
