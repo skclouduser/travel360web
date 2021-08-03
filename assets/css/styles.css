@@ -45,6 +45,7 @@
         font-family: 'Segoe UI Bold' !important;
         min-height: 50px;
         overflow: hidden;
+        max-height: 50px;
     }
 
     #about-content .tr-about__container--content {
