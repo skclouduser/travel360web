@@ -15,85 +15,99 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
 
 <body>
   <div class="tr-main-container">
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar tr-header">
-      <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
-        <img src="./assets/images/logo.png" alt="Travel 360 Logo" />
-      </a>
-
-      <div class="navbar-nav-scroll">
-        <ul class="navbar-nav bd-navbar-nav flex-row justify-content-between tr-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="/">PLAN A TRIP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              EXPLORE
+    <!-- <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar tr-header"> -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1">
+            <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+              <img src="./assets/images/logo.png" alt="Travel 360 Logo" />
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              SEE & DO
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              FESTIVAL & EVENTS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              WELLNESS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              MICE
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              BUY TICKETS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active">
-              PARTNER
-            </a>
-          </li>
-        </ul>
+          </div>
+          <div class="col-md-9">
+            <div class="navbar-nav-scroll">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  justify-content-around mr-auto tr-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">PLAN A TRIP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    EXPLORE
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    SEE & DO
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    FESTIVAL & EVENTS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    WELLNESS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    MICE
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    BUY TICKETS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active">
+                    PARTNER
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </nav>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <ul class="navbar-nav bd-navbar-nav flex-row tr-menu">
+              <li class="nav-item">
+                <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://bootstrap-slack.herokuapp.com/" target="_blank"
+                  rel="noopener" aria-label="Slack">
+                  <svg id="Icon_material-shopping-cart" data-name="Icon material-shopping-cart"
+                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <path id="Icon_material-shopping-cart-2" data-name="Icon material-shopping-cart"
+                      d="M8.1,20.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,8.1,20.6ZM1.5,3V5.2H3.7l3.96,8.349-1.485,2.7A2.127,2.127,0,0,0,5.9,17.3a2.206,2.206,0,0,0,2.2,2.2H21.3V17.3H8.562a.272.272,0,0,1-.275-.275l.033-.132L9.31,15.1h8.2a2.19,2.19,0,0,0,1.925-1.133l3.938-7.139A1.075,1.075,0,0,0,23.5,6.3a1.1,1.1,0,0,0-1.1-1.1H6.131L5.1,3ZM19.1,20.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,19.1,20.6Z"
+                      transform="translate(-1.5 -3)" fill="gray" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://bootstrap-slack.herokuapp.com/" target="_blank"
+                  rel="noopener" aria-label="Slack">
+                  <svg id="Icon_material-account-circle" data-name="Icon material-account-circle"
+                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <path id="Icon_material-account-circle-2" data-name="Icon material-account-circle"
+                      d="M14,3A11,11,0,1,0,25,14,11,11,0,0,0,14,3Zm0,3.3a3.3,3.3,0,1,1-3.3,3.3A3.3,3.3,0,0,1,14,6.3Zm0,15.62a7.921,7.921,0,0,1-6.6-3.542c.033-2.189,4.4-3.388,6.6-3.388s6.567,1.2,6.6,3.388A7.921,7.921,0,0,1,14,21.92Z"
+                      transform="translate(-3 -3)" fill="gray" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <ul class="navbar-nav ml-md-auto">
-        <li class="nav-item">
-          <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://bootstrap-slack.herokuapp.com/" target="_blank"
-            rel="noopener" aria-label="Slack">
-            <svg id="Icon_material-shopping-cart" data-name="Icon material-shopping-cart"
-              xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-              <path id="Icon_material-shopping-cart-2" data-name="Icon material-shopping-cart"
-                d="M8.1,20.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,8.1,20.6ZM1.5,3V5.2H3.7l3.96,8.349-1.485,2.7A2.127,2.127,0,0,0,5.9,17.3a2.206,2.206,0,0,0,2.2,2.2H21.3V17.3H8.562a.272.272,0,0,1-.275-.275l.033-.132L9.31,15.1h8.2a2.19,2.19,0,0,0,1.925-1.133l3.938-7.139A1.075,1.075,0,0,0,23.5,6.3a1.1,1.1,0,0,0-1.1-1.1H6.131L5.1,3ZM19.1,20.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,19.1,20.6Z"
-                transform="translate(-1.5 -3)" fill="gray" />
-            </svg>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://bootstrap-slack.herokuapp.com/" target="_blank"
-            rel="noopener" aria-label="Slack">
-            <svg id="Icon_material-account-circle" data-name="Icon material-account-circle"
-              xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-              <path id="Icon_material-account-circle-2" data-name="Icon material-account-circle"
-                d="M14,3A11,11,0,1,0,25,14,11,11,0,0,0,14,3Zm0,3.3a3.3,3.3,0,1,1-3.3,3.3A3.3,3.3,0,0,1,14,6.3Zm0,15.62a7.921,7.921,0,0,1-6.6-3.542c.033-2.189,4.4-3.388,6.6-3.388s6.567,1.2,6.6,3.388A7.921,7.921,0,0,1,14,21.92Z"
-                transform="translate(-3 -3)" fill="gray" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-    </header>
+    <!-- </header> -->
     <div class="tr-banner-container">
       <img src="./assets/images/banner.jpg" alt="Travel 360 Banner" />
     </div>
@@ -101,77 +115,102 @@
     <section id="about-content">
       <div class="container">
         <div class="row">
-        <div class="col-md-12 tr-about__container">
-          <h3>Let us be your Travel Partner!</h3>
-          <div class="tr-about__container--content text-justify"><span>TIFI Bot</span> will assist you with the art of travel.
-            Exclusively available on <span>Travel360.club</span>, the local leading technologies platform promoting
-            travel and lifestyle-related products and services, our TIFI Bot will deliver personalized, proactive
-            services and experiences before, during & after a trip.</div>
+          <div class="col-md-12 tr-about__container">
+            <h3>Let us be your Travel Partner!</h3>
+            <div class="tr-about__container--content text-justify"><span>TIFI Bot</span> will assist you with the art of
+              travel.
+              Exclusively available on <span>Travel360.club</span>, the local leading technologies platform promoting
+              travel and lifestyle-related products and services, our TIFI Bot will deliver personalized, proactive
+              services and experiences before, during & after a trip.</div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <section id="category">
       <div class="container">
         <h3 class="text-center tr-section-header">WHY JOIN</h3>
         <div class="row">
-          <div class="col-md-3 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-3">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/ai-travel-planner.png" alt="img" class="img-fluid" />
             </div>
             <h5>AI TRAVEL PLANNER aka TIFI Bot</h5>
-            <p>TIFI bot enables customers to customize their trips by copying, editing, sharing and downloading</p>
+            <p class="tr-paragraph">TIFI bot enables customers to customize their trips by copying, editing, sharing and
+              downloading</p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup1">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
-          <div class="col-md-3 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-3">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/vendor-management.png" alt="img" class="img-fluid" />
             </div>
             <h5>VENDOR MANAGEMENT SYSTEM aka TIFI Playgound </h5>
-            <p>The first vital step in the digitalization journey is </p>
+            <p class="tr-paragraph">The first vital step in the digitalization journey is </p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup2">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
 
-          <div class="col-md-3 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-3">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/powerful-management.png" alt="img" class="img-fluid" />
             </div>
             <h5>POWERFUL BOOKING ENGINE</h5>
-            <p>Enable instant bookings and confirmations when you register</p>
+            <p class="tr-paragraph">Enable instant bookings and confirmations when you register</p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup3">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
-          <div class="col-md-3 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-3">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/data-gold.png" alt="img" class="img-fluid" />
             </div>
             <h5>DATE IS OUR GOLD MINE</h5>
-            <p>Maximize data in the lifestyle, travel and hospitality space</p>
+            <p class="tr-paragraph">Maximize data in the lifestyle, travel and hospitality space</p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup4">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
         </div>
-    </section> 
+    </section>
     <section id="features">
       <div class="container">
         <h3 class="text-center tr-section-header">WHY US</h3>
         <div class="row">
-          <div class="col-md-4 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-4">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/dynamic.png" alt="img" class="img-fluid" />
             </div>
             <h5>DYNAMIC MARKETING CAPABILITIES</h5>
-            <p>Deliver the ultimate omnichannel experience: Strategy, Development, Web</p>
+            <p class="tr-paragraph">Deliver the ultimate omnichannel experience: Strategy, Development, Web</p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup5">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
 
-          <div class="col-md-4 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-4">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/pay-you.png" alt="img" class="img-fluid" />
             </div>
             <h5>WE CAN PAY YOU WITH A CLICK</h5>
-            <p>The first vital step in the digitalization journey is onboarding onto TIFI Playground</p>
+            <p class="tr-paragraph">The first vital step in the digitalization journey is onboarding onto TIFI
+              Playground</p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup6">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
 
-          <div class="col-md-4 text-center">
-            <div class="tr-feature-image__container">
+          <div class="col-md-4">
+            <div class="tr-feature-image__container text-center">
               <img src="./assets/images/personalized-support.png" alt="img" class="img-fluid" />
             </div>
             <h5>PERSONALIZED SUPPORT </h5>
-            <p>Enable instant bookings and confirmations when you register with TIFI Playground.</p>
+            <p class="tr-paragraph">Enable instant bookings and confirmations when you register with TIFI Playground.
+            </p>
+            <button type="button" class="open-button float-right" data-toggle="modal" data-target="#popup7">
+              <img src="assets/images/open.png" alt="open" class="img-fluid" />
+            </button>
           </div>
         </div>
     </section>
@@ -179,22 +218,30 @@
       <div class="container">
         <h3 class="text-center tr-section-header">OUR PARTNERS</h3>
         <div class="row justify-content-md-center">
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner1.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner2.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner3.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner4.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner5.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner6.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner7.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner8.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner9.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner10.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner11.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner12.png" alt="travel partner" class="img-fluid" /></div>
-          <!-- <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner13.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner14.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner15.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner16.png" alt="travel partner" class="img-fluid" /></div>           -->
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner1.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner2.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner3.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner4.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner5.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner6.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner7.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner8.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner9.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner10.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner11.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner12.png" alt="travel partner"
+              class="img-fluid" /></div>
         </div>
       </div>
     </section>
@@ -202,8 +249,10 @@
       <div class="container">
         <h3 class="text-center tr-section-header">TIFI AWARDS</h3>
         <div class="row justify-content-center">
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner17.png" alt="travel partner" class="img-fluid" /></div>
-          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner16.png" alt="travel partner" class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner17.png" alt="travel partner"
+              class="img-fluid" /></div>
+          <div class="col-md-2 tr-partner-container"><img src="./assets/images/partner16.png" alt="travel partner"
+              class="img-fluid" /></div>
         </div>
       </div>
     </section>
@@ -217,8 +266,179 @@
         </div>
       </div>
     </section>
-
-  </div> 
+    <section id="tr-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Travel Club 360</h5>
+            <ul>
+              <li class="pt-2"><a href="#">About Us</a></li>
+              <li class="pt-2"><a href="#">Partner With Us</a></li>
+              <li class="pt-2"><a href="#">Terms of Use</a></li>
+              <li class="pt-2"><a href="#">Privacy Policy</a></li>
+              <li class="pt-2"><a href="#">Cookies Policy</a></li>
+              <li class="pt-2"><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 connect-us">
+            <h5>Connect with us</h5>
+            <span><a href="#"><img src="./assets/images/facebook.png" alt="facebook" /></a></span>
+            </span><a href="#"><img src="./assets/images/instagram.png" alt="instagram" /></a></span>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Got any enquiries?</h5>
+            <button class="contact-us">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="modal-popup">
+      <div class="modal fade" id="popup1" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/ai-travel-planner.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">AI TRAVEL PLANNER aka TIFI Bot</h3>
+              <div class="text-left">
+                <p>TIFI bot enables customers to customize their trips by copying, editing, sharing and downloading
+                  their travel planner anytime & anywhere. </p>
+                <p>Get your attractions on top of the planner list by providing the best offers, uploading enticing
+                  photos and improving your ratings! Let our TIFI Keepers guide you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup2" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/vendor-management.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">VENDOR MANAGEMENT SYSTEM aka TIFI Playground</h3>
+              <div class="text-left">
+                <p>The first vital step in the digitalization journey is onboarding onto TIFI Playground, our one-stop
+                  solution portal that assists B2B clients to take their businesses up a notch. </p>
+                <p>TIFI Playground is a FREE to use, user-friendly and straightforward portal.</p>
+                <ul>
+                  <li>Customize your tours and packages. </li>
+                  <li>Manage last minute promotions & bookings with ease. </li>
+                  <li>Download orders & financial reports </li>
+                  <li>Scan & Redeem tickets on our Partner Mobile App aka TIFI Playground App</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup3" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/powerful-management.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">POWERFUL BOOKING ENGINE</h3>
+              <div class="text-left">
+                <p>Enable instant bookings and confirmations when you register with TIFI Playground.</p>
+                <ul>
+                  <li>Integrated payment gateway, supporting credit/debit card, FPX and E-Wallet transactions.</li>
+                  <li>Real time email notifications for booking confirmations</li>
+                  <li>E-ticket generation and redemption with QR Codes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup4" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/data-gold.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">DATA IS OUR GOLD MINE</h3>
+              <div class="text-left">
+                <p>Maximize data in the lifestyle, travel and hospitality space: </p>
+                <p>Receive insights on PMS (profile, demographics, past bookings, reservation), market data, traveler
+                  in-flux data, travelers’ information, sales data, website traffic, geolocation, location intelligence
+                  and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup5" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/dynamic.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">DYNAMIC MARKETING CAPABILITIES </h3>
+              <div class="text-left">
+                <p>Deliver the ultimate omnichannel experience: Strategy, Development, Web Optimization, Branding &
+                  Design, Digital Marketing, social media, PPC Campaigns, KOLs & Celebrity solutions & offline marketing
+                  solutions. Connect with our TIFI Creators.</p>
+                <p>Receive better ROAS with our insights on campaign result metrics, digital footprint, audience
+                  sentiment & intent behavior, social media platform engagement, experiential targeting & audience
+                  segmentation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup6" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/pay-you.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">WE CAN PAY YOU WITH A CLICK </h3>
+              <div class="text-left">
+                <p>
+                <ul>
+                  <li>Earn and sell more on our TIFI Platform </li>
+                  <li>Secure payment </li>
+                  <li>Payment available to local and international accounts</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup7" tabindex="-1" role="dialog" aria-labelledby="popup1Title" aria-hidden="true">
+        <div class="modal-dialog tr-modal" role="document">
+          <div class="modal-content px-1">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img src="./assets/images/personalized-support.png" alt="img" class="img-fluid" />
+              <h3 class="modal-header" id="popup1Title">PERSONALIZED SUPPORT </h3>
+              <div class="text-left">
+                <p>Solve your business, customer and marketing problems with our dedicated account managers. Meet our
+                  TIFI Keepers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/angular.js"></script>
