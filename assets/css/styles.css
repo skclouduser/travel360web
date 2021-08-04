@@ -230,8 +230,8 @@
     align-items: center;
     font-size: 20px;
     position: absolute;
-    bottom: 21%;
-    left: 7%;
+    bottom: 20%;
+    left: 6%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -312,6 +312,20 @@
     }
     #tr-footer{
         text-align: center;
+    }
+    .partner-button {
+        display: flex;
+        width: 150px;
+        height: 33px;
+        background: url("../images/partner-button-tab.jpg") no-repeat;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+        position: absolute;
+        bottom: 21%;
+        left: 7%;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 @media (max-width:567px){
