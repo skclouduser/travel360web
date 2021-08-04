@@ -61,6 +61,20 @@
     /* #about-content{
         padding-top: 40px;
     } */
+    .navbar-toggler{
+        width: 55px;
+        height: 34px;
+        background-color: #7eb444;
+        border:none !important;
+    }
+    .navbar-toggler .line{
+        width: 100%;
+        float: left;
+        height: 5px;
+        background-color: #249CA7;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
     .tr-main-container .active {
         color: #FF0000 !important;
     }
@@ -84,6 +98,7 @@
 .tr-banner-container{
     width: 100%;
     margin-top: 90px;
+    position: relative;
 }
 .tr-banner-container img{
     width: 100%;
@@ -201,6 +216,30 @@
     text-indent: 20px;
     padding-top: 30px;
 }
+.tr-navbar__button:focus {
+    outline: none;
+}
+
+.partner-button {
+    display: flex;
+    width: 270px;
+    height: 62px;
+    background: url("../images/partner-button.png") no-repeat;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 21%;
+    left: 7%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.partner-button a:hover, .partner-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 @media (min-width:992px) and (max-width:1199px){
     .tr-menu .nav-link{
         font-size: 12px;
@@ -227,9 +266,6 @@
         display: block !important;
     }
     .tr-navbar__button {
-        border: 1px solid #f8f9fa !important;
-        background: #f03b2e !important;
-        float: right;
         padding: 5px 10px !important;
         margin-top: 10px !important;
     }
@@ -294,6 +330,23 @@
     #tr-already-partner{
         margin-top: 40px;
     }
+    .navbar-brand {
+        display: none !important;
+    }
+    .partner-button {
+        display: flex;
+        width: 100px;
+        height: 22px;
+        background: url("../images/partner-button-mobile.jpg") no-repeat;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+        position: absolute;
+        bottom: 21%;
+        left: 7%;
+        font-family: 'Montserrat', sans-serif;
+    }
  
 }
 @media(min-width:568px){
@@ -303,5 +356,4 @@
     .desktopBanner{
         display: block;
     }
-    
 }
