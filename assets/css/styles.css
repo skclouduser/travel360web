@@ -224,7 +224,7 @@
     display: flex;
     width: 270px;
     height: 62px;
-    background: url("../images/partner-button.png") no-repeat;
+    /* background: url("../images/partner-button.png") no-repeat; */
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -234,7 +234,16 @@
     left: 6%;
     font-family: 'Montserrat', sans-serif;
 }
-
+.trBecomeAPartner {
+    background: url("../images/partner-link.png") no-repeat;
+    display: block;
+    width: 350px;
+    background-size: 100%;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
 .partner-button a:hover, .partner-button a {
     color: #fff;
     text-decoration: none;
@@ -244,10 +253,34 @@
     .tr-menu .nav-link{
         font-size: 12px;
     }
+    .trBecomeAPartner {
+        width: 200px;
+        background-size: 100%;
+        height: 50px;
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+@media (min-width:767px){
+    .tr-account-menu-desktop{
+        display: flex !important;
+    }
+    .tr-account-menu-xs{
+        display: none !important;
+    }
 }
 @media (min-width:767px) and (max-width:991px){
     .tr-menu .nav-link{
         font-size: 11px;
+    }
+    .trBecomeAPartner {
+        width: 170px;
+        background-size: 100%;
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 8px;
+        font-size: 12px;
     }
 }
 .tr-navbar_container{
@@ -268,6 +301,7 @@
     .tr-navbar__button {
         padding: 5px 10px !important;
         margin-top: 10px !important;
+        float: left;
     }
     .tr-navbar__button span{
         width: 20px;
@@ -317,7 +351,7 @@
         display: flex;
         width: 150px;
         height: 33px;
-        background: url("../images/partner-button-tab.jpg") no-repeat;
+        /* background: url("../images/partner-button-tab.jpg") no-repeat; */
         color: #fff;
         justify-content: center;
         align-items: center;
@@ -326,6 +360,29 @@
         bottom: 21%;
         left: 7%;
         font-family: 'Montserrat', sans-serif;
+    }
+    .trBecomeAPartner {
+        width: 170px;
+        background-size: 100%;
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 8px;
+        font-size: 11px;
+    }
+    .tr-navbarLogo{
+        float: left;
+        margin-left:30px;
+    }
+    #trNavBarMenu{
+        clear: both;
+    }
+    .tr-account-menu-desktop{
+        display: none !important;
+    }
+    .tr-account-menu-xs {
+        display: flex !important;
+        flex-direction: row !important;
+        float: right;
     }
 }
 @media (max-width:567px){
@@ -344,14 +401,11 @@
     #tr-already-partner{
         margin-top: 40px;
     }
-    .navbar-brand {
-        display: none !important;
-    }
     .partner-button {
         display: flex;
-        width: 100px;
+        width: 150px;
         height: 22px;
-        background: url("../images/partner-button-mobile.jpg") no-repeat;
+        /* background: url("../images/partner-button-mobile.jpg") no-repeat; */
         color: #fff;
         justify-content: center;
         align-items: center;
@@ -361,7 +415,14 @@
         left: 7%;
         font-family: 'Montserrat', sans-serif;
     }
- 
+    .trBecomeAPartner {
+        width: 150px;
+        background-size: 100%;
+        height: 35px;
+        padding-top: 10px;
+        padding-left: 8px;
+        font-size: 11px;
+    }
 }
 @media(min-width:568px){
     .mobileBanner{
@@ -370,4 +431,25 @@
     .desktopBanner{
         display: block;
     }
+}
+@media (min-width:1199px){
+    .trBecomeAPartner {
+        background: url("../images/partner-link.png") no-repeat;
+        display: block;
+        width: 350px;
+        background-size: 100%;
+        height: 70px;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+}
+.tr-expand-icon{
+    font-size: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FBAD18;
+}
+.tr-expand-icon:hover {
+    font-size: 50px;
+    color: #249ca7;
 }
