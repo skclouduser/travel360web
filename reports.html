@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" ng-app="travel360">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Travel360.club want you to have the trip of a lifetime in Malaysia,Travel360.club (operated by Travel Club 360 Sdn. Bhd. (1378591-T)) is a one stop Artificial Intelligence (AI) solution platform with smart itinerary planning capabilities for travellers planning their holiday in Malaysia. Travellers will be able to book flights, hotels, restaurants, transportation, events and attraction tickets, as well as receiving local recommendations, at different stages of their journey, according to their preferences.">
+    <meta name="author" content="Travel360">
+    <link rel="icon" href="./assets/images/fav.ico" />
+    <title>Travel 360</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="assets/js/angular.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css" />
+</head>
+
+<body>
+    <div class="tr-dashboard-container">
+        <section class="section-container" id="sales-report">
+            <div class="tr-sales-table">
+                <div class="search-filter">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="date-field">
+
+                    </div>
+                </div>
+                <div class="tr-reports-head">
+                    <span>Reports</span>
+                    <select name="paymentMode" class="custom-reports-field">
+                        <option value="payment_mode">Payment Mode</option>
+                        <option value="net_banking">Net Banking</option>
+                        <option value="debit_card">Debit Card</option>
+                    </select>
+                </div>
+                <div class="tr-table-reports">
+                    <table class="reports-table-heading">
+                        <tr>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Booking Number</th>
+                            <th scope="col">Booking Date</th>
+                            <th scope="col">SKU</th>
+                        </tr>
+                    </table>
+                    <div class="custom-field-selection">
+                        <select name="paymentMode" class="custom-select-field">
+                            <option value="payment_mode">Payment Mode</option>
+                            <option value="net_banking">Net Banking</option>
+                            <option value="debit_card">Debit Card</option>
+                        </select>
+                    </div>
+                    <div class="add-option">
+                        <a href="#">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19,19V5H5V19H19M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5C3,3.89 3.9,3 5,3H19M11,7H13V11H17V13H13V17H11V13H7V11H11V7Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <table class="tr-table-data">
+                    <tr class="tr-table-rows">
+                        <td>KL City Tour in 1 Day</td>
+                        <td>Mandy</td>
+                        <td>2109015EF56A48</td>
+                        <td>2021-09-01</td>
+                        <td>MYM0084PTO0001A487</td>
+                        <td>online</td>
+                    </tr>
+                    <tr class="tr-table-rows">
+                        <td>KL City Tour in 1 Day</td>
+                        <td>Mandy</td>
+                        <td>2109015EF56A48</td>
+                        <td>2021-09-01</td>
+                        <td>MYM0084PTO0001A487</td>
+                        <td>online</td>
+                    </tr>
+                    <tr class="tr-table-rows">
+                        <td>KL City Tour in 1 Day</td>
+                        <td>Mandy</td>
+                        <td>2109015EF56A48</td>
+                        <td>2021-09-01</td>
+                        <td>MYM0084PTO0001A487</td>
+                        <td>online</td>
+                    </tr>
+                    <tr class="tr-table-rows">
+                        <td>KL City Tour in 1 Day</td>
+                        <td>Mandy</td>
+                        <td>2109015EF56A48</td>
+                        <td>2021-09-01</td>
+                        <td>MYM0084PTO0001A487</td>
+                        <td>online</td>
+                    </tr>
+                    <tr class="tr-table-rows">
+                        <td>KL City Tour in 1 Day</td>
+                        <td>Mandy</td>
+                        <td>2109015EF56A48</td>
+                        <td>2021-09-01</td>
+                        <td>MYM0084PTO0001A487</td>
+                        <td>online</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
