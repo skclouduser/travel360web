@@ -567,6 +567,10 @@
         border: 1px solid #ddd;
     }
 
+    #tr-chart .canvasjs-chart-container {
+        postion: initial !important;
+    }
+
     .tr-table-reports {
         display: flex;
         flex-direction: row;
