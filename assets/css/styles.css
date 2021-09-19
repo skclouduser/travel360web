@@ -553,8 +553,9 @@
     }
 
     .tr-table-rows-reports td {
-        width: 170px !important;
+        width: 200px !important;
         padding: 25px 10px;
+        text-align: center;
     }
 
     .tr-error {
@@ -608,22 +609,20 @@
         background-color: #FBFBFB;
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
-        flex-grow: 2;
-        flex-basis: 27%;
     }
 
     .reports-table-heading th {
         padding: 15px 10px;
         font-weight: 500;
+        width: 200px !important;
+        text-align: center;
     }
 
     .custom-field-selection {
         padding: 0 5px;
     }
 
-    .add-option {
-        flex-grow: 1;
-    }
+    .add-option {}
 
     select.custom-select-field {
         padding: 15px 10px;
