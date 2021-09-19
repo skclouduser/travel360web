@@ -609,7 +609,7 @@
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
         flex-grow: 2;
-        flex-basis: 20%;
+        flex-basis: 27%;
     }
 
     .reports-table-heading th {
@@ -626,11 +626,13 @@
     }
 
     select.custom-select-field {
-        padding: 15px 5px;
+        padding: 15px 10px;
         background-color: #FBFBFB;
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
         border: none;
+        width: 180px !important;
+        height: auto;
     }
 
     select.custom-select-field:focus-visible {
@@ -649,11 +651,12 @@
     }
 
     .custom-reports-field {
-        padding: 5px;
-        background-color: #FBFBFB;
-        border-radius: 5px;
-        color: #707070;
-        border: 1px solid #b1a8a8;
+        padding: 5px !important;
+        background-color: #FBFBFB !important;
+        border-radius: 5px !important;
+        color: #707070 !important;
+        border: 1px solid #b1a8a8 !important;
+        width: 150px !important;
     }
 
     select.custom-reports-field:focus-visible {
