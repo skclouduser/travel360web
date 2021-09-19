@@ -517,9 +517,9 @@
     }
 
     th, td {
-        width: 150px;
+        width: 150px !important;
         text-align: center;
-        padding: 15px 5px;
+        padding: 15px 10px;
     }
 
     .tr-table-data {
@@ -545,6 +545,11 @@
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
         border: 1px solid #707070;
+    }
+
+    .tr-table-rows td {
+        width: 170px !important;
+        padding: 25px 10px;
     }
 
     .tr-error {
@@ -573,6 +578,8 @@
         background-color: #FBFBFB;
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
+        flex-grow: 2;
+        flex-basis: 20%;
     }
 
     .reports-table-heading th {
@@ -582,6 +589,10 @@
 
     .custom-field-selection {
         padding: 0 5px;
+    }
+
+    .add-option {
+        flex-grow: 1;
     }
 
     select.custom-select-field {
@@ -639,6 +650,11 @@
         flex-grow: 0;
         flex-basis: 10%;
         text-align: center;
+    }
+
+    .download a {
+        text-decoration: none;
+        color: #016A7C;
     }
 
     .download-label {
