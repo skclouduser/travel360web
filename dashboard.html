@@ -24,9 +24,19 @@
 </head>
 
 <body>
-    <div>
-        <div id="tr-chart" style="height: 370px; max-width: 920px; margin: 0px auto;">
+    <div class="tr-chart-section">
+        <div id="tr-chart" style="height: 370px; max-width: 370px;">
         </div>
+        <div class="chart-popup-arrow">
+            <div class="arrow-section">
+                <a href="#">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- <div id="chartContainer" style="height: 300px; max-width: 600px"></div> -->
     </div>
     <div class="tr-dashboard-container">
         <section class="section-container" id="sales-chart">
@@ -114,6 +124,90 @@
                 });
 
             chart.render();
+            var lineChart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                axisX: {
+                    interval: 1,
+                    intervalType: "year",
+                    valueFormatString: "DD/MM/YYYY"
+                },
+                axisY: {
+                    suffix: "%"
+                },
+                toolTip: {
+                    shared: true
+                },
+                legend: {
+                    reversed: true,
+                    verticalAlign: "center",
+                    horizontalAlign: "right"
+                },
+                data: [{
+                    type: "stackedColumn100",
+                    name: "Real-Time",
+                    showInLegend: true,
+                    xValueFormatString: "DD/MM/YYYY",
+                    yValueFormatString: "#,##0\"%\"",
+                    dataPoints: [
+                        { x: new Date(2010, 0), y: 40 },
+                        { x: new Date(2011, 0), y: 50 },
+                        { x: new Date(2012, 0), y: 60 },
+                        { x: new Date(2013, 0), y: 61 },
+                        { x: new Date(2014, 0), y: 63 },
+                        { x: new Date(2015, 0), y: 65 },
+                        { x: new Date(2016, 0), y: 67 }
+                    ]
+                },
+                {
+                    type: "stackedColumn100",
+                    name: "Web Browsing",
+                    showInLegend: true,
+                    xValueFormatString: "YYYY",
+                    yValueFormatString: "#,##0\"%\"",
+                    dataPoints: [
+                        { x: new Date(2010, 0), y: 28 },
+                        { x: new Date(2011, 0), y: 18 },
+                        { x: new Date(2012, 0), y: 12 },
+                        { x: new Date(2013, 0), y: 10 },
+                        { x: new Date(2014, 0), y: 10 },
+                        { x: new Date(2015, 0), y: 7 },
+                        { x: new Date(2016, 0), y: 5 }
+                    ]
+                },
+                {
+                    type: "stackedColumn100",
+                    name: "File Sharing",
+                    showInLegend: true,
+                    xValueFormatString: "YYYY",
+                    yValueFormatString: "#,##0\"%\"",
+                    dataPoints: [
+                        { x: new Date(2010, 0), y: 15 },
+                        { x: new Date(2011, 0), y: 12 },
+                        { x: new Date(2012, 0), y: 10 },
+                        { x: new Date(2013, 0), y: 9 },
+                        { x: new Date(2014, 0), y: 7 },
+                        { x: new Date(2015, 0), y: 5 },
+                        { x: new Date(2016, 0), y: 1 }
+                    ]
+                },
+                {
+                    type: "stackedColumn100",
+                    name: "Others",
+                    showInLegend: true,
+                    xValueFormatString: "YYYY",
+                    yValueFormatString: "#,##0\"%\"",
+                    dataPoints: [
+                        { x: new Date(2010, 0), y: 17 },
+                        { x: new Date(2011, 0), y: 20 },
+                        { x: new Date(2012, 0), y: 18 },
+                        { x: new Date(2013, 0), y: 20 },
+                        { x: new Date(2014, 0), y: 20 },
+                        { x: new Date(2015, 0), y: 23 },
+                        { x: new Date(2016, 0), y: 27 }
+                    ]
+                }]
+            });
+            lineChart.render();
         }
     </script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
