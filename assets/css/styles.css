@@ -540,7 +540,7 @@
         text-align: center;
     }
 
-    .tr-table-rows {
+    .tr-table-rows, .tr-table-rows-reports {
         color: #707070;
         box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
         border-radius: 5px;
@@ -548,6 +548,11 @@
     }
 
     .tr-table-rows td {
+        width: 150px !important;
+        padding: 25px 10px;
+    }
+
+    .tr-table-rows-reports td {
         width: 170px !important;
         padding: 25px 10px;
     }
